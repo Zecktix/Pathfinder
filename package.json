@@ -1,11 +1,4 @@
-{
-  "name": "pathfinder",
-  "version": "1.0.0",
-  "description": "AI-powered job board and career assistant",
-  "main": "pathfinder.js",
-  "scripts": {
-    "start": "node pathfinder.js",
-    "dev": "node pathfinder.js"
-  },
-  "engines": { "node": ">=18" }
+{ "name": "pathfinder", "version": "1.0.0", "description": "AI-powered job board and career assistant", 
+  "main": "pathfinder/pathfinder.js", "scripts": { "start": "node pathfinder/pathfinder.js", "dev": "node 
+  pathfinder/pathfinder.js" }, "engines": { "node": ">=18" } 
 }
