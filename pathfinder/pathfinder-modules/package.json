@@ -1,0 +1,1 @@
+{"name":"pf-modules","private":true,"dependencies":{"pdf-parse":"1.1.1","mammoth":"*","tesseract.js":"*"}}
