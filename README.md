@@ -8,7 +8,7 @@ It is built for people searching internationally: it detects visa sponsorship, r
 
 - **One file, zero dependencies.** The whole app is `pathfinder.js` and needs only [Node.js](https://nodejs.org) 18 or newer.
 - **Private by default.** Your resume, account and applications stay in a folder on your machine. The server listens on `127.0.0.1` only.
-- **Optional local AI.** If [Ollama](https://ollama.com) is running, you get plain-English fit explanations, job summaries, resume tailoring and cover letters. Everything works without it.
+- **Optional local AI.** If [Ollama](https://ollama.com) is running, you get plain-English fit explanations, job summaries, resume tailoring and cover letters.
 
 ## Features
 
