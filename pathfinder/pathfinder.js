@@ -18,8 +18,8 @@ if(+process.versions.node.split('.')[0]<18){console.error('Node 18 or newer is r
 const M={};
 const COMPANIES={
   "greenhouse": ["stripe","airbnb","cloudflare","gitlab","databricks","anthropic"],
-  "lever": ["spotify","palantir",{"board":"mistral"}],
-  "ashby": ["ramp","notion","linear","openai"],
+  "lever": ["spotify","palantir"],
+  "ashby": ["ramp","notion","linear","openai","mistral.ai"],
   // Boards on Recruitee / Workable can be listed by their company slug, e.g. "recruitee": ["acme"], "workable": ["acme"]
   "recruitee": [],
   "workable": [],
