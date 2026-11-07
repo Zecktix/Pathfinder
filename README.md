@@ -6,7 +6,7 @@ A self-hosted, AI-assisted job board that runs on your own computer. It download
 
 It is built for people searching internationally: it detects visa sponsorship, relocation help, language requirements and remote restrictions, and it never assumes that "remote" means "remote from anywhere".
 
-- **One file, zero dependencies.** The whole app is `pathfinder.js` and needs only [Node.js](https://nodejs.org) 18 or newer. No npm install, no API keys, no accounts with anyone.
+- **One file, zero dependencies.** The whole app is `pathfinder.js` and needs only [Node.js](https://nodejs.org) 18 or newer.
 - **Private by default.** Your resume, account and applications stay in a folder on your machine. The server listens on `127.0.0.1` only.
 - **Optional local AI.** If [Ollama](https://ollama.com) is running, you get plain-English fit explanations, job summaries, resume tailoring and cover letters. Everything works without it.
 
@@ -58,7 +58,7 @@ Every job page shows the per-component breakdown, strengths, gaps, missing requi
 1. Install [Node.js](https://nodejs.org) (version 18 or newer).
 2. Download or clone this repository.
 3. Start the app:
-   - **Windows:** double-click `start-pathfinder.bat`
+   - **Windows:** `npm install` then `npm start`
    - **macOS / Linux:** `node pathfinder.js`
 4. Open <http://localhost:3000>, create an account, and upload your resume on the **Profile** tab.
 
@@ -71,27 +71,6 @@ ollama pull llama3.2
 ```
 
 Leave Ollama running and Pathfinder detects it automatically. The AI explains and drafts only. It never changes the fit score.
-
-## Configuration
-
-### Which companies and sources are downloaded
-Create a file named `boards.json` next to `pathfinder.js`. If there is no `boards.json`, the built-in list at the top of `pathfinder.js` is used.
-
-```json
-{
-  "greenhouse": ["stripe", "airbnb"],
-  "lever": ["spotify"],
-  "ashby": ["ramp", "openai"],
-  "recruitee": [],
-  "workable": [],
-  "aggregators": ["remotive", "remoteok", "arbeitnow", "himalayas"],
-  "try": ["some-company-name"]
-}
-```
-
-- Use the company's slug from its careers URL, for example `boards.greenhouse.io/<slug>`.
-- Names under `"try"` are checked on Greenhouse, Lever (US and EU) and Ashby. Misses are skipped quietly and remembered for 14 days.
-- `aggregators` are queried at most once every 6 hours each. Remove a name to turn that source off.
 
 ### Environment variables
 
