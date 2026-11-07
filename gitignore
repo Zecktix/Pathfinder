@@ -1,0 +1,15 @@
+# Your personal data: resume, accounts, login tokens, downloaded jobs. NEVER commit this.
+pathfinder-data/
+
+# Your own source list (copy boards.example.json to boards.json)
+boards.json
+
+# Node / OS / editor
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
